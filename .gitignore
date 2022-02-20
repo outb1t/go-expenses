@@ -1,2 +1,3 @@
 .idea
-api/pkg
+!expenses-api/build/.gitkeep
+expenses-api/build/*

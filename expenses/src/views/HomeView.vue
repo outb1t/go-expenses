@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue'
+import ExchangeRates from "@/components/ExchangeRates.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <ExchangeRates msg="Yeah!"/>
   </main>
 </template>
