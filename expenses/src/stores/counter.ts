@@ -1,21 +1,21 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
 export const counterStore = defineStore({
-  id: 'counterStore',
+  id: "counterStore",
   state: () => ({
-    count: 0
+    count: 0,
   }),
   getters: {
-    doubleCount: (state) => state.count * 2
+    doubleCount: (state) => state.count * 2,
   },
   actions: {
     increment() {
-      this.count++
+      this.count++;
     },
     waitAndIncrement() {
       setTimeout(() => {
-        this.increment()
-      }, 1000)
-    }
-  }
-})
+        this.increment();
+      }, 1000);
+    },
+  },
+});

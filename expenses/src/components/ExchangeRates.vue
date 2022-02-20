@@ -8,10 +8,9 @@
 </template>
 
 <script lang="ts">
-
-import {defineComponent} from "vue";
+import { defineComponent } from "vue";
 import http from "@/http";
-import {counterStore} from "@/stores/counter";
+import { counterStore } from "@/stores/counter";
 
 export default defineComponent({
   props: {
@@ -20,23 +19,20 @@ export default defineComponent({
   data() {
     return {
       rates: {},
-      store: counterStore()
-    }
+      store: counterStore(),
+    };
   },
   mounted() {
-    this.loadRates()
+    this.loadRates();
   },
   methods: {
     loadRates(): void {
-      http.get('/rates').then(response => {
-        this.rates = response.data
-      })
+      http.get("/rates").then((response) => {
+        this.rates = response.data;
+      });
     },
-  }
-})
-
+  },
+});
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -4,6 +4,6 @@ import ExchangeRates from "@/components/ExchangeRates.vue";
 
 <template>
   <main>
-    <ExchangeRates msg="Yeah!"/>
+    <ExchangeRates msg="Yeah!" />
   </main>
 </template>
